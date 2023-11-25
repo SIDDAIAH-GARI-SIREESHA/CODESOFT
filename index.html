@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <title>Calulator</title>
 </head>
-
 <body>
-    <header>
-        <div class="logo">Portofolio</div>
-
-        <nav>
-
-            <ul>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-   
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>C programming</li>
-			<li>Python</li>
-            <li>Java</li>
-			<li>SQL</li>
-            <li>Data Science</li>
-        </ul>
-    </section>
-
-
-    <section id="about">
-        <h2>About Me</h2>
-        <h3>This is Sireesha Siddaiah Gari</h3>
-		<p>I am well interested in web designing,coding and data science</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: sireesha123@gmail.com</p>
-        <p>Phone: 9876543210</p>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
-    </section>
-
-    <script src="script.js"></script>
+   <div class="main">
+      <input type="text" id = 'res'>
+      <div class="btn">
+         <input type="button" value = 'C' onclick = "Clear()">
+         <input type="button" value = '%' onclick = "Solve('%')">
+         <input type="button" value = '←' onclick ="Back('←')">
+         <input type="button" value = '/' onclick = "Solve('/')">
+         <br>
+         <input type="button" value = '7' onclick = "Solve('7')">
+         <input type="button" value = '8' onclick = "Solve('8')">
+         <input type="button" value = '9' onclick = "Solve('9')">
+         <input type="button" value = 'x' onclick = "Solve('*')">
+         <br>
+         <input type="button" value = '4' onclick = "Solve('4')">
+         <input type="button" value = '5' onclick = "Solve('5')">
+         <input type="button" value = '6' onclick = "Solve('6')">
+         <input type="button" value = '-' onclick = "Solve('-')">
+         <br>
+         <input type="button" value = '1' onclick = "Solve('1')">
+         <input type="button" value = '2' onclick = "Solve('2')">
+         <input type="button" value = '3' onclick = "Solve('3')">
+         <input type="button" value = '+' onclick = "Solve('+')">
+         <br>
+         <input type="button" value = '00'onclick = "Solve('00')">
+         <input type="button" value = '0' onclick = "Solve('0')">
+         <input type="button" value = '.' onclick = "Solve('.')">
+         <input type="button" value = '=' onclick = "Result()">
+      </div>
+   </div>
+   <script src = 'script.js' ></script>
 </body>
-
 </html>
